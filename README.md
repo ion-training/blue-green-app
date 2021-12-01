@@ -36,8 +36,8 @@ Image verify
 docker image ls
 ```
 
-RUN container
-_-P - rand port map to EXPOSED port in dockerfile_
+RUN container\
+_take exposed ports in dockerfile and publish via random port (-P)_
 ```
 docker container run -d -P blue-app
 ```
@@ -50,8 +50,8 @@ Exposed ports
 docker container ls
 ```
 
-# upload image to hub.docker.com (optional)
-Create an account on [hub.docker.com](https://hub.docker.com/)
+# Upload image to hub.docker.com (optional)
+Create an account on [hub.docker.com](https://hub.docker.com/)\
 Following steps are based on a new created user on hub.docker.com named `user1234`
 
 Re-tag the image with so that username is pre-pended to the name
